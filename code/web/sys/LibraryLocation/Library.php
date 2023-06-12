@@ -837,27 +837,6 @@ class Library extends DataObject {
                 'hideInLists' => true,
                 'permissions' => ['Library Domain Settings'],
             ],
-            'displaySection' => [
-                'property' => 'displaySection',
-                'type' => 'section',
-                'label' => 'System Message (Legacy Version)',
-                'hideInLists' => true,
-                'properties' => [
-			        'systemMessage' => [
-			        	'property' => 'systemMessage',
-				        'type' => 'html',
-			        	'label' => 'System Message (Legacy Version)',
-			        	'description' => 'A message to be displayed at the top of the screen',
-                        'note' => 'This is a legacy setting. For more options and features, use <a href="/Admin/SystemMessages">System Messages</a> under Local Catalog Enrichment.',
-				        'size' => '80',
-			        	'maxLength' => '512',
-			        	'allowableTags' => "<p><em><i><strong><b><a><ul><ol><li><h1><h2><h3><h4><h5><h6><h7><pre><code><hr><table><tbody><tr><th><td><caption><img><br><div><span><sub><sup><script>",
-			        	'hideInLists' => true,
-			        	'permissions' => ['Library Theme Configuration'],
-                        ],
-                    ],
-			],
-
 
 			// Basic Display //
 			'displaySection' => [
@@ -928,6 +907,18 @@ class Library extends DataObject {
 						'hideInLists' => true,
 						'editPermissions' => ['Library Theme Configuration'],
 					],
+                    'systemMessage' => [
+                        'property' => 'systemMessage',
+                        'type' => 'html',
+                        'label' => 'System Message (Legacy Version)',
+                        'description' => 'A message to be displayed at the top of the screen',
+                        'note' => 'This is a legacy setting. For more options and features, use <a href="/Admin/SystemMessages">System Messages</a> under Local Catalog Enrichment.',
+                        'size' => '80',
+                        'maxLength' => '512',
+                        'allowableTags' => "<p><em><i><strong><b><a><ul><ol><li><h1><h2><h3><h4><h5><h6><h7><pre><code><hr><table><tbody><tr><th><td><caption><img><br><div><span><sub><sup><script>",
+                        'hideInLists' => true,
+                        'permissions' => ['Library Theme Configuration'],
+                    ],
 				],
 			],
 
